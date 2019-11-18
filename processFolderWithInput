@@ -1,0 +1,6 @@
+#!/bin/bash
+
+eval "$(conda shell.bash hook)"
+conda activate dv
+
+find "$1" -type f -name "*.aedat4" -exec sh -c 'python /home/wescomp/Dropbox/WesDocs/UD/Research/imuWork_updated/aedat4tomat.py -i "$1" -o "${1%.aedat4}.mat"' _ {} \;
