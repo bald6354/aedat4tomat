@@ -1,7 +1,12 @@
 # aedat4tomat
-Convert AEDAT4 files from DV into .mat files for matlab
+Convert AEDAT4 files from DV into .mat files for matlab. Python is required (recommend Anaconda).
 
-Example Usage:
+First install the dv module...
+```
+pip install dv
+```
+
+Example Conversion:
 ```console
 foo@bar:~$ python /home/username/aedat4tomat.py -i "dvFile.aedat4" -o "dvFile.mat"
 ```
