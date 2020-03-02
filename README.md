@@ -16,3 +16,5 @@ You can also make a simple bash script that will process all aedat4 files in a d
 ```
 unix(['./processFolderWithInput ' pathToAedatFiles])
 ```
+
+(This code is designed to work with aedat4 that contains frames, events, and imu streams. If your data does not have all these fields, just comment out the sections of aedat4tomat.py that deal with the data you are missing.)
